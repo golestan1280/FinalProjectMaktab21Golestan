@@ -76,27 +76,6 @@
   color: darksalmon;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-.border {
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-  margin: 6px;
-}
-
-
-.App1{
-  height: 100%
-}
 
 .penColor{
   color: white;
@@ -117,4 +96,26 @@
 .jumbotron{
   background-color: rgba(0,0,0,0);
   padding: 0px;
+}
+
+
+.border {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin: 6px;
+}
+
+
+.App1{
+  height: 100%
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
