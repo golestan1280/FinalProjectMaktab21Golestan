@@ -98,19 +98,19 @@ router.post('/signup', (req, res) => {
 
 
 /////////////////////////////////////////////////صفحه پروفایل کاربر
-// router.get('/myprofile', (req, res) => {
+router.get('/myprofile', (req, res) => {
 
-//   User.find({username: req.user.username}, function (err, contents) {
-//     if (err) {
-//       console.log(err.message)
-//       return res.json({
-//         success: false,
-//         msg: "error profile\n" + err.message
-//       })
-//     }
-//     res.json(contents)
-//   });
-// });
+  User.find({username: req.user.username}, function (err, contents) {
+    if (err) {
+      console.log(err.message)
+      return res.json({
+        success: false,
+        msg: "error profile\n" + err.message
+      })
+    }
+    res.json(contents)
+  });
+});
 
 
 ///////////////////////////////////////////ویرایش پروفایل 
