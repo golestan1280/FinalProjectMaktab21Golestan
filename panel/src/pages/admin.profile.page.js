@@ -26,7 +26,7 @@ class AdminProfilePage extends Component {
         return (
                 <Tab.Container id="left-tabs-example" defaultActiveKey="first">
                     <Row className="main">
-                        <Col sm={3} className="App-header left">
+                        <Col sm={3} className="App-header right">
                             <p className="mb-5" style={{fontSize: '20px'}}>
                                 Welcome<br/> <span style={{color: 'darksalmon'}}>{this.state.profile.map(profile => profile.firstname +" "+ profile.lastname)}</span> 
                             </p>
@@ -53,7 +53,7 @@ class AdminProfilePage extends Component {
                             </Nav>
                             <Button variant="secondary mt-5" style={{ color: 'white' }} onClick={this.logout}>Logout</Button>
                         </Col>
-                        <Col sm={9} className="right">
+                        <Col sm={9} className="left">
                             <Tab.Content>
                                 <Tab.Pane eventKey="first">
                                     <AllArticle/>
