@@ -64,45 +64,45 @@ class AllMembers extends Component {
     render() {
         const { members } = this.state;
         return (
-            <div style={{ paddingTop: 60 }}>
+            <div style={{ paddingTop: 60,direction:'rtl',textAlign:'right',marginLeft:'40px' }}>
                 <Container>
 
-                    {this.state.success &&
-                        <Alert variant="success"> The password reset successfully into phone number </Alert>}
 
-                    {this.state.success1 &&
-                        <Alert variant="success"> The user delete successfully! </Alert>}
-
-                    {this.state.error &&
-                        <Alert variant="danger"> Show Members Failed! </Alert>}
-
-                    {this.state.error1 &&
-                        <Alert variant="danger"> Delete Member Failed! </Alert>}
-
-                    <h2 style={{ paddingBottom: 40 }}>All Users</h2>
+                    <h3 style={{ paddingBottom: 40 , color:'teal'}}>همه کاربران</h3>
 
                     {members.map(member => {
-                        return <Card className="mb-4" style={{ borderColor: 'darksalmon' }}>
+                        return <Card className="mb-4" style={{ borderColor: 'teal' }}>
                             <ListGroup variant="flush">
-                                <ListGroup.Item><b>Username:&nbsp;&nbsp;&nbsp;</b>{member.username}</ListGroup.Item>
-                                <ListGroup.Item><b>Firstname:&nbsp;&nbsp;&nbsp;</b>{member.firstname}</ListGroup.Item>
-                                <ListGroup.Item><b>Lastname:&nbsp;&nbsp;&nbsp;</b>{member.lastname}</ListGroup.Item>
-                                <ListGroup.Item><b>Sex:&nbsp;&nbsp;&nbsp;</b>{member.sex}</ListGroup.Item>
-                                <ListGroup.Item><b>Phone:&nbsp;&nbsp;&nbsp;</b>{member.phone}</ListGroup.Item>
-                                <ListGroup.Item><b>Role:&nbsp;&nbsp;&nbsp;</b>{member.role}</ListGroup.Item>
+                                <ListGroup.Item><b>نام: &nbsp;&nbsp;&nbsp;</b>{member.firstname}</ListGroup.Item>
+                                <ListGroup.Item><b>نام خانوادگی:&nbsp;&nbsp;&nbsp;</b>{member.lastname}</ListGroup.Item>
+                                <ListGroup.Item><b>نام کاربری: &nbsp;&nbsp;&nbsp;</b>{member.username}</ListGroup.Item>
+                                <ListGroup.Item><b>جنسیت: &nbsp;&nbsp;&nbsp;</b>{member.sex}</ListGroup.Item>
+                                <ListGroup.Item><b>تلفن: &nbsp;&nbsp;&nbsp;</b>{member.phone}</ListGroup.Item>
+                                <ListGroup.Item><b>نقش کاربر: &nbsp;&nbsp;&nbsp;</b>{member.role}</ListGroup.Item>
                             </ListGroup>
 
                             <Card.Footer>
                                 <Button onClick={this.Delete} id={member._id} variant="danger" style={{ color: 'white' }}>
-                                    Delete User
+                                    حذف کاربر
                                 </Button>
-                                <Button onClick={this.Reset} id={member._id} variant="success ml-2" style={{ color: 'white' }}>
-                                    Reset Password
+                                <Button onClick={this.Reset} id={member._id} variant="success mr-2" style={{ color: 'white' }}>
+                                    ریست رمز عبور
                                 </Button>
                             </Card.Footer>
                         </Card>
                     })}
 
+                    {this.state.success &&
+                        <Alert variant="success"> رمز عبور با موفقیت تغییر پیدا کرد. </Alert>}
+
+                    {this.state.success1 &&
+                        <Alert variant="success"> حذف با موفقیت انجام شد. </Alert>}
+
+                    {this.state.error &&
+                        <Alert variant="danger"> خطا در نمایش کاربران </Alert>}
+
+                    {this.state.error1 &&
+                        <Alert variant="danger"> خطا در حذف کاربر </Alert>}
                 </Container>
             </div>
         )

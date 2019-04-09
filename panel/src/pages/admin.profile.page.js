@@ -28,30 +28,30 @@ class AdminProfilePage extends Component {
                     <Row className="main">
                         <Col sm={3} className="App-header right">
                             <p className="mb-5" style={{fontSize: '20px'}}>
-                                Welcome<br/> <span style={{color: 'darksalmon'}}>{this.state.profile.map(profile => profile.firstname +" "+ profile.lastname)}</span> 
+                                خوش آمدید<br/> <span style={{color: 'teal'}}>{this.state.profile.map(profile => profile.firstname +" "+ profile.lastname)}</span> 
                             </p>
 
-                            <Nav variant="pills" className="flex-column mb-5">
+                            <Nav variant="warning" className="flex-column mb-5">
                                 <Nav.Item>
-                                    <Nav.Link className="btn" eventKey="first">All Articles</Nav.Link>
+                                    <Nav.Link className="btn" eventKey="first">همه مقاله ها</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link className="btn" eventKey="second">My Articles</Nav.Link>
+                                    <Nav.Link className="btn" eventKey="second">مقاله های من</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link className="btn" eventKey="third">Add New Article</Nav.Link>
+                                    <Nav.Link className="btn" eventKey="third">ایجاد مقاله جدید</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link className="btn" eventKey="fourth">Edit Profile</Nav.Link>
+                                    <Nav.Link className="btn" eventKey="fourth">ویرایش پروفایل</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link className="btn" eventKey="fifth">All Users</Nav.Link>
+                                    <Nav.Link className="btn" eventKey="fifth">همه کاربران</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link className="btn" eventKey="sixth">All Comments</Nav.Link>
+                                    <Nav.Link className="btn" eventKey="sixth">همه کامنت ها</Nav.Link>
                                 </Nav.Item>
                             </Nav>
-                            <Button variant="secondary mt-5" style={{ color: 'white' }} onClick={this.logout}>Logout</Button>
+                            <Button variant="danger mt-4" style={{ color: 'white' }} onClick={this.logout}>خروج</Button>
                         </Col>
                         <Col sm={9} className="left">
                             <Tab.Content>

@@ -47,22 +47,15 @@ class AllComments extends Component {
     render() {
         const { Comments } = this.state;
         return (
-            <div style={{ paddingTop: 60 }}>
+            <div style={{ paddingTop: 60 ,direction:'rtl',textAlign:'right',marginLeft:'40px' }}>
                 <Container>
 
-                    {this.state.success &&
-                        <Alert variant="success"> The comment delete successfully! </Alert>}
+                    
 
-                    {this.state.error &&
-                        <Alert variant="danger"> Show Comments Failed! </Alert>}
-
-                    {this.state.error1 &&
-                        <Alert variant="danger"> Delete Comment Failed! </Alert>}
-
-                    <h2 style={{ paddingBottom: 40 }}>All Comments</h2>
+                    <h3 style={{ paddingBottom: 40 , color:'teal' }}>همه کامنت ها</h3>
 
                     {Comments.map(comment => {
-                        return <Card className="mb-4" style={{ borderColor: 'darksalmon' }}>
+                        return <Card className="mb-4" style={{ borderColor: 'teal' }}>
                             <Card.Body>
                                 <Card.Subtitle className="text-muted">{comment.username}</Card.Subtitle>
                                 <Card.Text className="my-2">{comment.text}</Card.Text>
@@ -72,13 +65,21 @@ class AllComments extends Component {
 
                             <Card.Footer>
                                 <Button onClick={this.Delete} id={comment._id} variant="danger" style={{ color: 'white' }}>
-                                    Delete Comment
+                                    حذف کامنت
                                 </Button>
 
                             </Card.Footer>
                         </Card>
                     })}
 
+                    {this.state.success &&
+                        <Alert variant="success"> کامنت با موفقیت حذف شد. </Alert>}
+
+                    {this.state.error &&
+                        <Alert variant="danger"> خطا در نمایش کامنت ها. </Alert>}
+
+                    {this.state.error1 &&
+                        <Alert variant="danger"> خطا در حذف کامنت ها </Alert>}
                 </Container>
             </div>
         )

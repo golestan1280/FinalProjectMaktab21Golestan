@@ -79,14 +79,14 @@ class AdminArticleComponent extends Component {
                             aria-expanded={open}
                             variant="secondary"
                             style={{ color: 'white' }}>
-                            View Comments
+                            نمایش کامنت 
                         </Button>
                         <Button
                             onClick={this.Delete}
                             id={article._id}
                             variant="danger"
-                            style={{ color: 'white', float: 'right' }}>
-                            Delete
+                            style={{ color: 'white', float: 'right', marginLeft:'10px' }}>
+                            حذف
                         </Button>
 
                         <Collapse in={this.state.open}>
@@ -100,8 +100,8 @@ class AdminArticleComponent extends Component {
                                     <Form.Group controlId="exampleForm.ControlTextarea1">
                                         <Form.Control name="commentText" className="comment" as="textarea" rows="3" />
                                     </Form.Group>
-                                    <Button style={{ color: 'white' }} variant="secondary" type="submit">
-                                        Add your comment...
+                                    <Button style={{ color: 'white' }} variant="success" type="submit">
+                                        درج کامنت
                                     </Button>
                                 </Form>
                             </Jumbotron>
