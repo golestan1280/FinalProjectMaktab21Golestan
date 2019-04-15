@@ -25,7 +25,7 @@ class ProfilePage extends Component {
 
     render() {
         return (
-                <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+                <Tab.Container id="left-tabs-example" defaultActiveKey="first" >
                     <Row className="main">                        
                         
                         <Col sm={3} className="App-header right">
