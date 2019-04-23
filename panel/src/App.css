@@ -1,5 +1,6 @@
 *{
   box-sizing: inherit;
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
 }
 
 .App {
@@ -39,19 +40,16 @@
   margin: 0;
 }
 .left{
-  /* position: fixed;
-  top: 0;
-  bottom: 0;
-  height: 100%;
-  z-index: 3; */
-  /* overflow-x: hidden;
-  overflow-y: auto; */
+ 
   max-width: 140vh;
   padding-right: 0%!important;
-  padding-left: 0%!important
+  padding-left: 0%!important;
+ 
+  
 }
 .right{
-  /* margin-left: 40vh; */
+  overflow-x: hidden;
+  overflow-y: auto;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -59,6 +57,7 @@
   z-index: 3;
   margin-left: 150vh;
   margin-right: 0;
+  right: 0px;
 }
 
 .about-header {

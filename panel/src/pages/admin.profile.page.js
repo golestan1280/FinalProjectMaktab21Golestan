@@ -51,7 +51,7 @@ class AdminProfilePage extends Component {
                                     <Nav.Link className="btn" eventKey="sixth">همه کامنت ها</Nav.Link>
                                 </Nav.Item>
                             </Nav>
-                            <Button variant="danger mt-4" style={{ color: 'white' }} onClick={this.logout}>خروج</Button>
+                            <Button variant="danger mt-4" style={{ color: 'white', paddingLeft:"35px" , paddingRight:"35px" , borderRadius:"20px" }} onClick={this.logout}>خروج</Button>
                         </Col>
                         <Col sm={9} className="left">
                             <Tab.Content>

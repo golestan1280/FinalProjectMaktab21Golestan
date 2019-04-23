@@ -44,10 +44,10 @@ class ProfilePage extends Component {
                                     <Nav.Link className="btn" eventKey="third">ایجاد مقاله جدید</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link className="btn" eventKey="fourth">ویرایش پروفابل</Nav.Link>
+                                    <Nav.Link className="btn" eventKey="fourth">ویرایش پروفایل</Nav.Link>
                                 </Nav.Item>
                             </Nav>
-                            <Button variant="danger mt-4" style={{ color: 'white'}} onClick={this.logout}>خروج</Button>
+                            <Button variant="danger mt-4" style={{ color: 'white', paddingLeft:"35px" , paddingRight:"35px" , borderRadius:"20px"}} onClick={this.logout}>خروج</Button>
                         </Col>
 
                         <Col sm={9} className="left">

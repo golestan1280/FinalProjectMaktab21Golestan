@@ -43,7 +43,7 @@ class LoginPage extends Component {
                 <Container>
                     <Row>
                         <Col md={{ span: 4, offset: 4 }}>
-                            <h3 style={{ marginTop: 35, marginBottom: 35}}> صفحه ورود مشخصات کاربر </h3>
+                            <h3 style={{ marginTop: 35, marginBottom: 35}}> ورود به حساب کاربری </h3>
                             <Form onSubmit={this.onSubmit}>
                                 
                                 <Form.Group controlId="formGroupUsername">
@@ -53,12 +53,12 @@ class LoginPage extends Component {
                                     <Form.Control name="password" type="password"  style={{textAlign:"right" }} placeholder="رمز عبور" />
                                 </Form.Group>
 
-                                <Button style={{ backgroundColor: 'teal', borderColor: 'teal', color: 'white' }} type="submit">
+                                <Button style={{ backgroundColor: 'teal', borderColor: 'teal', color: 'white',borderRadius:"20px",paddingRight:"35px",paddingLeft:"35px" }} type="submit">
                                     ورود
                                 </Button>
 
                             </Form>
-                            <p style={{fontSize: 15, marginTop: 30}}><a href="/panel/signup" style={{color: 'teal'}}>ایجاد کاربر جدید</a></p>
+                            <p style={{fontSize: 15, marginTop: 30}}> هنوز ثبت نام نکرده اید؟<a href="/panel/signup" style={{color: 'teal', marginRight:"10px"}}>ثبت نام</a></p>
                             <p style={{fontSize: 16, marginTop: 30}}><a href="/" style={{color: 'white'}}>صفحه اصلی</a></p>
                             {this.state.error && <p style={{ color: 'red' }}>ورود با خطا مواجه شده است لطفا دوباره تکرار نمایید</p>}
                         </Col>

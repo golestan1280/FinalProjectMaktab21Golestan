@@ -49,7 +49,7 @@ class SignUpPage extends Component {
                 <Container>
                     <Row>
                         <Col md={{ span: 4, offset: 4 }}>
-                            <h3 style={{ marginTop: 35, marginBottom: 35 }}>صفحه ثبت نام کاربر</h3>
+                            <h3 style={{ marginTop: 35, marginBottom: 35 }}>ثبت نام کاربر</h3>
                             <Form onSubmit={this.onSubmit}>
                                 <Form.Group controlId="formGroupFirstname" >
                                     <Form.Control name="firstname" type="text" style={{textAlign:"right" }} placeholder="نام" />
@@ -76,12 +76,12 @@ class SignUpPage extends Component {
                                 </Form.Group>
 
                                
-                                <Button style={{ backgroundColor: 'teal', borderColor: 'teal', color: 'white' }} type="submit">
+                                <Button style={{ backgroundColor: 'teal', borderColor: 'teal', color: 'white',borderRadius:"20px",paddingRight:"35px",paddingLeft:"35px" }} type="submit">
                                     ثبت نام
                                 </Button>
 
                             </Form>
-                            <p style={{ fontSize: 16, marginTop: 20 }}><a href="/panel/login" style={{ color: 'teal' }}>صفحه ورود کاربر</a></p>
+                            <p style={{ fontSize: 16, marginTop: 20 }}>قبلا ثبت نام کرده اید؟<a href="/panel/login" style={{ color: 'teal', marginRight:"10px" }}>وارد شوید</a></p>
                             <p style={{ fontSize: 16, marginTop: 20 }}><a href="/" style={{ color: 'white' }}>صفحه اصلی</a></p>
                             {error && <p style={{ color: 'red' }}>ثبت نام با شکست مواجه شد لطفا دوباره تکرار نمایید.</p>}
                         </Col>
