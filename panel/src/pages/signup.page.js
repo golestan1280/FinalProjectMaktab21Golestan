@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import Axios from 'axios';
-// import {SignIn} from '../Components';
 import { Form, Button, Container, Row, Col } from 'react-bootstrap';
-// import ImageUploader from 'react-images-upload';
+import Axios from 'axios';
 
 class SignUpPage extends Component {
     constructor(props) {
@@ -36,6 +34,7 @@ class SignUpPage extends Component {
         console.log(data)
     }
 
+    
 
     onChange = ({ target: { name, value } }) => {
         this.setState({ [name]: value })

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import {Link} from 'react-router-dom';
 import { Tab, Row, Col, Nav, Button } from 'react-bootstrap';
 import {AddNewArticle, MyArticle, AllArticle, EditProfile} from '../Components';
 import axios from 'axios';
@@ -30,7 +29,11 @@ class ProfilePage extends Component {
                         
                         <Col sm={3} className="App-header right">
                             <p className="mb-5" style={{fontSize: '20px'}}>
-                                خوش آمدید<br/> <span style={{color: 'teal'}}>{this.state.profile.map(profile => profile.firstname +" "+ profile.lastname)}</span> 
+                                
+                                 
+                                <span style={{color: 'teal'}}>{this.state.profile.map(profile => profile.firstname +" "+ profile.lastname)}</span> 
+                                <br/>
+                                به صفحه کاربری وارد شدید 
                             </p>
 
                             <Nav fill variant="warning" className="flex-column mb-5">
