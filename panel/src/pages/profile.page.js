@@ -30,7 +30,7 @@ class ProfilePage extends Component {
                         <Col sm={3} className="App-header right">
                             <p className="mb-5" style={{fontSize: '20px'}}>
                                 
-                                 
+                                 {/*  */}
                                 <span style={{color: 'teal'}}>{this.state.profile.map(profile => profile.firstname +" "+ profile.lastname)}</span> 
                                 <br/>
                                 به صفحه کاربری وارد شدید 
