@@ -69,7 +69,9 @@ class MyVerticallyCenteredModal extends React.Component {
         );
     }
 }
-//###########################################################################################
+
+
+//////////////////////////////////////////////////////////
 
 class MyArticle extends Component {
     constructor(props) {
