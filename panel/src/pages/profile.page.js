@@ -36,7 +36,7 @@ class ProfilePage extends Component {
                                 به صفحه کاربری وارد شدید 
                             </p>
 
-                            <Nav fill variant="warning" className="flex-column mb-5">
+                            <Nav fill variant="" className="flex-column mb-5">
                                 <Nav.Item>
                                     <Nav.Link className="btn" eventKey="first">همه مقاله ها</Nav.Link>
                                 </Nav.Item>
